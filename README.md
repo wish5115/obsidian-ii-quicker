@@ -1,5 +1,9 @@
 # Obsidian II-Plugin
 
+# 中文帮助
+
+
+
 # Plugin Introduction
 
 This plugin has 3 functions: fast insertion of Markdown code, status bar shows the size of the document and Zen mode, these 3 modes can be switched on and off. Lightweight, all the code more than 800 lines, the core code more than 200 lines, mostly for ease of use and handling interface logic. You can quickly insert most of the Markdown code and some uncommon code, such as time, Audio, Video, Iframe, etc.
@@ -65,7 +69,13 @@ Zen mode style: here you can customize your zen mode style, including editor sty
 
 # Issues and feedback
 
+You can go to [obsidian-ii-plugin/issues](https://github.com/wish5115/obsidian-ii-plugin/issues) for feedback if you have any questions.
 
 # Development and Improvement
 
-
+```
+git clone 
+cd 
+npm run install
+npm run dev
+```

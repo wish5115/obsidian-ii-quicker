@@ -1,8 +1,6 @@
 # Obsidian II-Plugin
 
-# 中文帮助
-
-
+[中文帮助](https://github.com/wish5115/obsidian-ii-plugin/blob/main/README-zh.md)
 
 # Plugin Introduction
 

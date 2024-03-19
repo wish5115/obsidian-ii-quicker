@@ -86,8 +86,8 @@ You can go to [obsidian-ii-plugin/issues](https://github.com/wish5115/obsidian-i
 # Development and Improvement
 
 ```
-git clone 
-cd 
-npm run install
+git clone https://github.com/wish5115/obsidian-ii-plugin.git
+cd obsidian-ii-plugin
+npm install
 npm run dev
 ```

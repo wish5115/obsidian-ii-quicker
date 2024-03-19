@@ -1,0 +1,120 @@
+.color-contain .color-item {
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 25px;
+	margin-bottom: 25px;
+}
+
+.color-contain .color-item:hover {
+	opacity: 0.5;
+}
+
+.color-contain .color-bottom {
+	float: right;
+	margin-right: 28px;
+	margin-top: 10px;
+}
+
+.color-contain .color-more {
+	background: none;
+	padding-left: 0;
+}
+
+.color-contain .color-wrap {
+	width: 30px;
+	height: 30px;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.color-contain .color-more-text {
+	margin-left: 12px;
+	font-size: 24px;
+}
+
+.color-contain .color-ok-btn {
+	float: right;
+	margin-left: 15px;
+	width: 40px;
+}
+
+/* 设置-颜色代码输入框高度 */
+.setting-color-codes textarea {
+	height: 150px;
+}
+
+
+.dlg-split{
+    margin-top:15px;
+}
+
+.dlg-cancel-btn {
+    margin-left:20px;background: none !important;;
+}
+
+.dlg-label{
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+.setting-date-format input, .setting-time-format input{
+    width: 200px;
+}
+
+.setting-zen-mode-style textarea {
+	width: 500px;
+	height: 300px;
+}
+
+/* 禅模式样式 */
+:is(
+	.workspace-ribbon.mod-left,
+	.workspace-split.mod-left-split,
+	.workspace-split.mod-right-split,
+	.workspace-tabs.mod-active.mod-top > .workspace-tab-header-container,
+	.status-bar
+).ii-zen, .workspace-leaf.mod-active .view-header.ii-zen {
+    display: none!important;
+}
+.workspace-split.mod-root.ii-zen {
+    padding-bottom: 0!important;
+}
+.workspace.ii-zen{
+	margin-right: 0!important;
+}
+
+/* 滚动条样式 */
+.workspace-leaf.mod-active.ii-zen .cm-scroller::-webkit-scrollbar{
+	/* visibility: hidden!important; */
+	display: none!important;
+}
+
+/* 编辑器区边距 */
+.workspace-leaf.mod-active.ii-zen .cm-scroller{
+	padding: 5px!important;
+}
+
+/* 整个工作区样式 */
+/* .theme-light .workspace-leaf.mod-active .view-content.ii-zen {
+	background-color: #05456e!important;
+}
+.theme-dark .workspace-leaf.mod-active .view-content.ii-zen {
+	background-color: #05456e!important;
+} */
+
+/* 编辑器样式 */
+/* .theme-light .workspace-leaf.mod-active.ii-zen .cm-sizer{
+	background-color: antiquewhite;
+	padding: 20px;
+	box-shadow: 0px 0px 100px 15px #000;
+	border-radius: 8px;
+}
+.theme-dark .workspace-leaf.mod-active.ii-zen .cm-sizer{
+	background-color: rgb(114, 99, 80);
+	padding: 20px;
+	box-shadow: 0px 0px 100px 15px #000;
+	border-radius: 8px;
+	color:  #ccc;
+} */

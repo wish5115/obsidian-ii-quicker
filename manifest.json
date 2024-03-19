@@ -1,0 +1,11 @@
+{
+	"id": "ii-plugin",
+	"name": "ii",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Quickly insert Markdown code and show doc size and zen mode.",
+	"author": "Wilson",
+	"authorUrl": "https://forum-zh.obsidian.md/u/wilson/",
+	"fundingUrl": "https://forum-zh.obsidian.md/u/wilson/",
+	"isDesktopOnly": false
+}

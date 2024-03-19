@@ -40,7 +40,9 @@
 
 # 安装
 
-下载 obsidian-ii-plugin.zip 解压后放到插件目录，重启 obsidian 即可。
+到这里下载 [Release obsidian-ii-plugin-1.0.1](https://github.com/wish5115/obsidian-ii-plugin/releases/tag/1.0.1)
+
+下载后把 obsidian-ii-plugin.zip 解压后，放到插件目录，重启 obsidian，然后别忘了到设置里开启插件即可。
 
 # 配置说明
 
@@ -75,7 +77,7 @@ Zen mode style：这里可以自定义你的禅模式样式，包括编辑器样
 
 # 问题与反馈
 
-您有任何问题可以到 [obsidian-ii-plugin/issues](https://github.com/wish5115/obsidian-ii-plugin/issues) 去反馈。
+您有任何问题都可以到 [obsidian-ii-plugin/issues](https://github.com/wish5115/obsidian-ii-plugin/issues) 去反馈。
 
 # 开发与改进
 

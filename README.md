@@ -43,7 +43,9 @@ Status bar shows current file size will show `xx.xx KB` or `xx.xx MB` in status 
 
 # Installation
 
-Download obsidian-ii-plugin.zip, unzip it and put it in the plugin directory, restart obsidian.
+Download [Release obsidian-ii-plugin-1.0.1] (https://github.com/wish5115/obsidian-ii-plugin/releases/tag/1.0.1) here
+
+After downloading, unzip the obsidian-ii-plugin.zip, put it in the plugin directory, restart obsidian, and then don't forget to open the plugin in the settings.
 
 # Configuration
 

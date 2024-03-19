@@ -23,21 +23,20 @@
 
 #### 快速输入截图
 
-![[我开发了一个快速输入Markdown代码的插件-20240318195702413.webp|491]]
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/list1.png)
 
-![[我开发了一个快速输入Markdown代码的插件-20240318195748256.webp|438]]
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/list2.png)
 
-![[我开发了一个快速输入Markdown代码的插件-20240318200631362.webp|611]]
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/image-modal.webp)
 
 #### 禅模式截图
 
-![[我开发了一个快速输入Markdown代码的插件（ii-plugin）-20240320003419751.webp|535]]
-
-![[我开发了一个快速输入Markdown代码的插件（ii-plugin）-20240320003447941.webp|549]]
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/zen-light.png)
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/zen-dark.png)
 
 #### 动画展示
 
-
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/iiplugin.gif)
 
 # 安装
 
@@ -45,8 +44,8 @@
 
 # 配置说明
 
-![[我开发了一个快速输入Markdown代码的插件（ii-plugin）-20240320022804702.webp|744]]
-![[我开发了一个快速输入Markdown代码的插件（ii-plugin）-20240320004046355.webp|745]]
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/settings1.webp)
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/settings2.webp)
 
 Quick insert Markdown code：开启这个功能，就会加入常见 Markdown 代码的命令，通过 `/ii` 可快速输入，也可以使用命令面板输入。
 

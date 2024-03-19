@@ -26,11 +26,20 @@ Status bar shows current file size will show `xx.xx KB` or `xx.xx MB` in status 
 
 #### Quick Input Screenshot
 
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/list1.png)
+
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/list2.png)
+
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/image-modal.webp)
+
 #### Zen Mode Screenshots
+
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/zen-light.png)
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/zen-dark.png)
 
 #### Animation
 
-
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/iiplugin.gif)
 
 # Installation
 
@@ -38,31 +47,34 @@ Download obsidian-ii-plugin.zip, unzip it and put it in the plugin directory, re
 
 # Configuration
 
-Quick insert Markdown code: enable this function, it will add the commands of common Markdown code, you can input them quickly by `/ii`, or you can use the command panel to input them.
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/settings1.webp)
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/settings2.webp)
 
-Show doc size in status: enable this function, it will show the size of the current document in status bar.
+**Quick insert Markdown code:** enable this function, it will add the commands of common Markdown code, you can input them quickly by `/ii`, or you can use the command panel to input them.
 
-Zen mode: If this function is enabled, it will add the command of Zen mode, you can open Zen mode by `/iiz` or command panel, or customize the shortcut to open Zen mode.
+**Show doc size in status:** enable this function, it will show the size of the current document in status bar.
 
-Show Chinese tips: if this feature is enabled, it will show Chinese translation in the right side of the command list, see the picture in the preview, by default it will be turned on and off automatically according to your language.
+**Zen mode:** If this function is enabled, it will add the command of Zen mode, you can open Zen mode by `/iiz` or command panel, or customize the shortcut to open Zen mode.
 
-Show Color picker modal: this function is to pop up a color picker dialog for you to choose when you set text color or background, here 20 common colors are chosen which are most recognizable to most human beings, see: [list of 20 different colors](https://zhuanlan.zhihu.com/p/508870810 )
+**Show Chinese tips:** if this feature is enabled, it will show Chinese translation in the right side of the command list, see the picture in the preview, by default it will be turned on and off automatically according to your language.
 
-Common color codes: here you can customize your common colors, note that each color code is on a separate line, here you can choose 20 common colors that are most recognizable to most humans, see: [list of 20 different colors](https://zhuanlan.zhihu.com/p/508870810 )
+**Show Color picker modal:** this function is to pop up a color picker dialog for you to choose when you set text color or background, here 20 common colors are chosen which are most recognizable to most human beings, see: [list of 20 different colors](https://zhuanlan.zhihu.com/p/508870810 )
 
-Show image and link modal: This function is to pop up a dialog box for you to fill in more information when you insert an image or link.
+**Common color codes:** here you can customize your common colors, note that each color code is on a separate line, here you can choose 20 common colors that are most recognizable to most humans, see: [list of 20 different colors](https://zhuanlan.zhihu.com/p/508870810 )
 
-Show media modal: this function is to pop up a dialog box for you to fill more contents when you insert audio/video or Iframe.
+**Show image and link modal:** This function is to pop up a dialog box for you to fill in more information when you insert an image or link.
 
-Show tips in images and link code: this function, when you insert empty images or link code, will use text to suggest the meaning of each part in the code, which is more friendly to newbies.
+**Show media modal:** this function is to pop up a dialog box for you to fill more contents when you insert audio/video or Iframe.
 
-Use only standard Markdown code: this function, when you insert Markdown code, use standard Markdown format to insert.
+**Show tips in images and link code:** this function, when you insert empty images or link code, will use text to suggest the meaning of each part in the code, which is more friendly to newbies.
 
-Date format: this is when you insert the date, use the format, and the official time formatting code, more formats see: [String + Format](https://momentjs.com/docs/#/parsing/string-format/)
+**Use only standard Markdown code:** this function, when you insert Markdown code, use standard Markdown format to insert.
 
-Time format: this is the format used when you insert the time, using the same time formatting code as the official one, see [String + Format](https://momentjs.com/docs/#/parsing/string-format/) for more formats.
+**Date format:** this is when you insert the date, use the format, and the official time formatting code, more formats see: [String + Format](https://momentjs.com/docs/#/parsing/string-format/)
 
-Zen mode style: here you can customize your zen mode style, including editor style and background style, in fact, you can input any style you want.
+**Time format:** this is the format used when you insert the time, using the same time formatting code as the official one, see [String + Format](https://momentjs.com/docs/#/parsing/string-format/) for more formats.
+
+**Zen mode style:** here you can customize your zen mode style, including editor style and background style, in fact, you can input any style you want.
 
 
 # Issues and feedback

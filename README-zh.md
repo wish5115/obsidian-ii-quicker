@@ -49,31 +49,31 @@
 ![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/settings1.webp)
 ![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/settings2.webp)
 
-Quick insert Markdown code：开启这个功能，就会加入常见 Markdown 代码的命令，通过 `/ii` 可快速输入，也可以使用命令面板输入。
+**Quick insert Markdown code：** 开启这个功能，就会加入常见 Markdown 代码的命令，通过 `/ii` 可快速输入，也可以使用命令面板输入。
 
-Show doc size in status：开启这个功能，就会在状态栏显示当前文档占用空间的大小。
+**Show doc size in status：** 开启这个功能，就会在状态栏显示当前文档占用空间的大小。
 
-Zen mode：开启这个功能，就会加入禅模式的命令，通过 `/iiz` 或命令面板可打开禅模式，或者自定义快捷键打开。
+**Zen mode：** 开启这个功能，就会加入禅模式的命令，通过 `/iiz` 或命令面板可打开禅模式，或者自定义快捷键打开。
 
-Show Chinese tips：如果开启这个功能，会在命令列表里的右侧显示中文翻译，参见预览里的图片，默认情况下会根据你的语言自动开关。
+**Show Chinese tips：** 如果开启这个功能，会在命令列表里的右侧显示中文翻译，参见预览里的图片，默认情况下会根据你的语言自动开关。
 
-Show Color picker modal：这个功能是当你设置文字颜色或背景时，弹出颜色选择对话框供你选择，这里选择了大多数人类最易辨别的 20 种常见颜色，参见：[20 种不同的颜色列表](https://zhuanlan.zhihu.com/p/508870810)
+**Show Color picker modal：** 这个功能是当你设置文字颜色或背景时，弹出颜色选择对话框供你选择，这里选择了大多数人类最易辨别的 20 种常见颜色，参见：[20 种不同的颜色列表](https://zhuanlan.zhihu.com/p/508870810)
 
-Common color codes：这里可以自定义你的常用颜色，注意，每个颜色代码单独占一行，这里选择了大多数人类最易辨别的 20 种常见颜色，参见：[20 种不同的颜色列表](https://zhuanlan.zhihu.com/p/508870810)
+**Common color codes：** 这里可以自定义你的常用颜色，注意，每个颜色代码单独占一行，这里选择了大多数人类最易辨别的 20 种常见颜色，参见：[20 种不同的颜色列表](https://zhuanlan.zhihu.com/p/508870810)
 
-Show image and link modal：这个功能是当你插入图片或链接时，弹出对话框供你填写更多内容。
+**Show image and link modal：** 这个功能是当你插入图片或链接时，弹出对话框供你填写更多内容。
 
-Show media modal：这个功能是当你插入音视频或 Iframe 时，弹出对话框供你填写更多内容。
+**Show media modal：** 这个功能是当你插入音视频或 Iframe 时，弹出对话框供你填写更多内容。
 
-Show tips in images and link code：这个功能，当你插入空图片或链接代码时，会在代码中用文字提示每部分含义，对新手比较友好。
+**Show tips in images and link code：** 这个功能，当你插入空图片或链接代码时，会在代码中用文字提示每部分含义，对新手比较友好。
 
-Use only standard Markdown code：这个功能，当你插入 Markdown 代码时，使用标准 Markdown 格式插入。
+**Use only standard Markdown code：** 这个功能，当你插入 Markdown 代码时，使用标准 Markdown 格式插入。
 
-Date format：这个是当你插入日期时，使用的格式，采用和官方一致的时间格式化代码，更多格式参见：[String + Format](https://momentjs.com/docs/#/parsing/string-format/)
+**Date format：** 这个是当你插入日期时，使用的格式，采用和官方一致的时间格式化代码，更多格式参见：[String + Format](https://momentjs.com/docs/#/parsing/string-format/)
 
-Time format：这个是当你插入时间时，使用的格式，采用和官方一致的时间格式化代码，更多格式参见：[String + Format](https://momentjs.com/docs/#/parsing/string-format/)
+**Time format：** 这个是当你插入时间时，使用的格式，采用和官方一致的时间格式化代码，更多格式参见：[String + Format](https://momentjs.com/docs/#/parsing/string-format/)
 
-Zen mode style：这里可以自定义你的禅模式样式，包括编辑器样式和背景样式，事实上，你可以输入任何你想要的样式。
+**Zen mode style：** 这里可以自定义你的禅模式样式，包括编辑器样式和背景样式，事实上，你可以输入任何你想要的样式。
 
 # 问题与反馈
 

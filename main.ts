@@ -396,7 +396,7 @@ class ColorPickerModal extends Modal {
 			colorDivs[index] = div.createDiv({ text: "" });
 			colorDivs[index].setAttribute("title", `${color}`);
 			colorDivs[index].addClass("color-item");
-			colorDivs[index].style = `background:${color};`;
+			colorDivs[index].style.background = `${color};`;
 			colorDivs[index].onclick = () => {
 				this.color = color;
 				this.triggerCallback();
@@ -415,13 +415,13 @@ class ColorPickerModal extends Modal {
 		const colorWrap = more.createSpan();
 		colorWrap.setAttribute("title", this.color);
 		colorWrap.addClass("color-wrap");
-		colorWrap.style = `background:${this.color};`;
+		colorWrap.style.background = `${this.color};`;
 		const colorInput = colorWrap.createEl("input");
 		//colorInput.style = 'visibility:hidden';
 		colorInput.type = "color";
 		colorInput.value = this.color;
 		colorInput.onchange = (event) => {
-			this.color = event.target.value;
+			this.color = colorInput.value;
 			colorWrap.style.background = this.color;
 			colorWrap.setAttribute("title", this.color);
 			// 在这里处理颜色变更
@@ -462,11 +462,12 @@ class ColorPickerModal extends Modal {
  */
 class DialogModal extends Modal {
 	callback: CallableFunction;
-	val1: string;
-	val2: string;
-	val3: string;
-	val4: string;
-	val5: string;
+	[key: string]: string| any;
+	// val1: string;
+	// val2: string;
+	// val3: string;
+	// val4: string;
+	// val5: string;
 	selection: string;
 	type: string;
 	constructor(app: App, type: string,  selection:string, callback: CallableFunction) {
@@ -570,7 +571,7 @@ class DialogModal extends Modal {
 		dropdown.createEl("option", { text: "webm", value: "webm" });
 		this.val4 = "mp4";
 		dropdown.onchange = (event) => {
-			this.val4 = event.target.value;
+			this.val4 = dropdown.value;
 		};
 
 		this.createWidthAndHeight(contentEl, "val1", "val2");
@@ -589,7 +590,7 @@ class DialogModal extends Modal {
 		wInput.placeholder = "Width optional";
 		wInput.style.width = "120px";
 		wInput.onchange = (event) => {
-			this[wval] = event.target.value;
+			this[wval] = wInput.value;
 		};
 
         contentEl.createEl("span", { text: " x " });
@@ -598,7 +599,7 @@ class DialogModal extends Modal {
 		hInput.placeholder = "Height optional";
 		hInput.style.width = "120px";
 		hInput.onchange = (event) => {
-			this[hval] = event.target.value;
+			this[hval] = hInput.value;
 		};
 	}
 
@@ -608,7 +609,7 @@ class DialogModal extends Modal {
 		input.type = "text";
 		input.style.width = "100%";
 		input.onchange = (event) => {
-			this[val] = event.target.value;
+			this[val] = input;
 		};
 	}
 
@@ -618,7 +619,7 @@ class DialogModal extends Modal {
 		altInput.placeholder=placeholder||"Optional";
 		altInput.type = "text";
 		altInput.onchange = (event) => {
-			this[alt] = event.target.value;
+			this[alt] = altInput.value;
 		};
 
 		contentEl.createEl("div", { text: titleLabel }).addClass("dlg-label");
@@ -626,7 +627,7 @@ class DialogModal extends Modal {
 		titleInput.placeholder="Optional";
 		titleInput.type = "text";
 		titleInput.onchange = (event) => {
-			this[title] = event.target.value;
+			this[title] = titleInput.value;
 		};
 	}
 }
@@ -803,7 +804,7 @@ class IISettingTab extends PluginSettingTab {
 			});
 
 		//添加Zen模式样式
-		let zenTimer = null;
+		let zenTimer: NodeJS.Timeout | null = null;
 		new Setting(containerEl).setName("Zen mode style")
 			.setDesc("The style of the Zen mode.")
 			.setClass("setting-zen-mode-style")

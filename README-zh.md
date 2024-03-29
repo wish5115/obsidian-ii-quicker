@@ -26,9 +26,9 @@
 
 # 安装
 
-到这里下载 [Release obsidian-ii-plugin-1.1.1](https://github.com/wish5115/obsidian-ii-plugin/releases/tag/1.1.1)
+到这里下载 [Release obsidian-ii-quicker-1.1.1](https://github.com/wish5115/obsidian-ii-quicker/releases/tag/1.1.1)
 
-下载后把 obsidian-ii-plugin.zip 解压后，放到插件目录，重启 obsidian，然后别忘了到设置里开启插件即可。
+下载后把 obsidian-ii-quicker.zip 解压后，放到插件目录，重启 obsidian，然后别忘了到设置里开启插件即可。
 
 
 # 使用
@@ -47,31 +47,31 @@
 
 #### 快速输入截图
 
-![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/list1.png)
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-quicker@main/assets/screenshots/list1.png)
 
-![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/list2.png)
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-quicker@main/assets/screenshots/list2.png)
 
-![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/image-modal.webp)
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-quicker@main/assets/screenshots/image-modal.webp)
 
 #### 禅模式截图
 
-![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/zen-light.png)
-![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/zen-dark.png)
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-quicker@main/assets/screenshots/zen-light.png)
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-quicker@main/assets/screenshots/zen-dark.png)
 
 #### 动画展示
 
-![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/iiplugin.gif)
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-quicker@main/assets/screenshots/iiplugin.gif)
 
 
 # 问题与反馈
 
-您有任何问题都可以到 [obsidian-ii-plugin/issues](https://github.com/wish5115/obsidian-ii-plugin/issues) 去反馈。
+您有任何问题都可以到 [obsidian-ii-quicker/issues](https://github.com/wish5115/obsidian-ii-quicker/issues) 去反馈。
 
 # 开发与改进
 
 ```
-git clone https://github.com/wish5115/obsidian-ii-plugin.git
-cd obsidian-ii-plugin
+git clone https://github.com/wish5115/obsidian-ii-quicker.git
+cd obsidian-ii-quicker
 npm install
 npm run dev
 ```

@@ -15,7 +15,7 @@ import {
 	setIcon,
 } from "obsidian";
 
-export const PLUGIN_ID = "ii-plugin";
+export const PLUGIN_ID = "ii-quicker";
 
 export default class IIPlugin extends Plugin {
 	settings: IIPluginSettings;

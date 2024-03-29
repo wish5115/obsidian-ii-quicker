@@ -1,11 +1,11 @@
 {
 	"id": "ii-plugin",
 	"name": "ii",
-	"version": "1.0.0",
+	"version": "1.1.1",
 	"minAppVersion": "0.15.0",
-	"description": "Quickly insert Markdown code and show doc size and zen mode.",
+	"description": "Quickly insert Markdown code, Zen mode, browser search, status bar shows current document size, user-defined commands, JavaScript and CSS code snippets, draggable status bar, minimize button added to settings panel, and more.",
 	"author": "Wilson",
-	"authorUrl": "https://forum-zh.obsidian.md/u/wilson/",
-	"fundingUrl": "https://forum-zh.obsidian.md/u/wilson/",
+	"authorUrl": "https://github.com/wish5115/obsidian-ii-plugin",
+	"fundingUrl": "",
 	"isDesktopOnly": false
 }

@@ -1,3 +1,4 @@
+/* ii-zen by ii-plugin */
 .color-contain .color-item {
 	width: 30px;
 	height: 30px;
@@ -63,58 +64,140 @@
     width: 200px;
 }
 
-.setting-zen-mode-style textarea {
+.setting-style-codes textarea, .setting-custom-code textarea, .setting-code-snippets textarea {
 	width: 500px;
 	height: 300px;
 }
+.settings-search-url input{
+	width: 300px;
+}
+.settings-checkbox-list{
+	padding-top: 10px;
+	width: 500px;
+}
+.settings-checkbox-list label{
+    margin-bottom: 15px;
+    margin-right: 15px;
+    display: inline-block;
+    width: 148px;
+	text-align: left;
+}
+.settings-checkbox-list input[type=checkbox]{
+	position: relative;
+	top: 2px;
+	margin-right: 4px;
+	float: left;
+}
+
+.settings-custom-code-desc{
+	line-height: 180%;
+}
+
+.ob-settings-minimize-btn {
+    cursor: var(--cursor);
+    position: absolute;
+    top: var(--size-2-3);
+    right: var(--size-4-8);
+    font-size: 24px;
+    line-height: 20px;
+    height: 24px;
+    width: 24px;
+    padding: 0 var(--size-2-2);
+    border-radius: var(--radius-s);
+    color: var(--text-muted);
+	text-align: center;
+}
+.ob-settings-minimize-btn:before {
+	font-family: Inter, sans-serif;
+	content: '\2D';
+	font-weight: 300;
+}
+.ob-settings-minimize-btn:hover {
+    background: var(--background-modifier-hover);
+}
+
+.ob-settings-minimize-tips{
+	position: absolute;
+    top: var(--size-2-3);
+    right: var(--size-4-16);
+	font-size: 14px;
+    line-height: 20px;
+    height: 24px;
+	padding: 0 var(--size-2-2);
+	color: var(--interactive-accent);
+	background-color: var(--background-primary);
+	display: none;
+}
+
+.ob-settings-minimize-btn:hover ~ .ob-settings-minimize-tips {
+    display: block;
+}
+
+.mod-settings.ii-ob-settings-hide {
+	position: relative; /* 或 absolute/fixed */
+    animation-name: hideToLeftBottom;
+    animation-duration: 0.6s; /* 动画时长 */
+    animation-fill-mode: forwards; /* 动画结束后保持最后一个关键帧样式 */
+}
+
+@keyframes hideToLeftBottom {
+	0% {
+	  opacity: 1;
+	  transform: translate(0, 0);
+	}
+	100% {
+	  opacity: 0;
+	  transform: translate(-100%, 100%);
+	}
+}
 
 /* 禅模式样式 */
-:is(
-	.workspace-ribbon.mod-left,
-	.workspace-split.mod-left-split,
-	.workspace-split.mod-right-split,
-	.workspace-tabs.mod-active.mod-top > .workspace-tab-header-container,
-	.status-bar
-).ii-zen, .workspace-leaf.mod-active .view-header.ii-zen {
-    display: none!important;
-}
-.workspace-split.mod-root.ii-zen {
-    padding-bottom: 0!important;
-}
-.workspace.ii-zen{
-	margin-right: 0!important;
-}
-
-/* 滚动条样式 */
-.workspace-leaf.mod-active.ii-zen .cm-scroller::-webkit-scrollbar{
-	/* visibility: hidden!important; */
+:is(.workspace-split.mod-root .workspace-tabs.mod-active .workspace-leaf.mod-active.ii-zen)
+/* 顶部工具栏 */
+.view-header
+{
 	display: none!important;
 }
-
+/* 滚动条样式 */
+.workspace-leaf.mod-active.ii-zen-light .cm-scroller::-webkit-scrollbar,
+.workspace-leaf.mod-active.ii-zen .cm-scroller::-webkit-scrollbar{
+	display: none!important;
+}
 /* 编辑器区边距 */
+.workspace-leaf.mod-active.ii-zen-light .cm-scroller,
 .workspace-leaf.mod-active.ii-zen .cm-scroller{
 	padding: 5px!important;
 }
 
-/* 整个工作区样式 */
-/* .theme-light .workspace-leaf.mod-active .view-content.ii-zen {
-	background-color: #05456e!important;
+:is(
+	.workspace-ribbon.mod-left,
+	.workspace-split.mod-left-split,
+	.workspace-split.mod-right-split,
+	.status-bar
+):is(.ii-zen-light, .ii-zen-slight),
+.workspace-tabs.mod-active.ii-zen-light .workspace-tab-header-container,
+.workspace-split.mod-root .workspace-tabs.ii-zen-light-un-active,
+.workspace-split.mod-root .workspace-split.mod-vertical.ii-zen-light-un-active,
+.workspace-split.mod-root .workspace-split.mod-horizontal.ii-zen-light-un-active,
+.workspace-leaf.mod-active.ii-zen-light .view-header,
+body.ii-zen-light .workspace-split > hr.workspace-leaf-resize-handle,
+body.ii-zen-light .workspace-tabs > hr.workspace-leaf-resize-handle
+{
+    display: none!important;
 }
-.theme-dark .workspace-leaf.mod-active .view-content.ii-zen {
-	background-color: #05456e!important;
-} */
+/* 兼容某些主题rootSplit去掉右边距 */
+.workspace-split.mod-root.ii-zen-slight,
+.workspace-split.mod-root.ii-zen-light {
+    padding-bottom: 0!important;
+}
+/* 兼容某些主题workspace去掉右边距 */
+.workspace.ii-zen-slight,
+.workspace.ii-zen-light{
+	margin-right: 0!important;
+}
+/* 微禅模式修改顶部第一个标签头部的边距 */
+.workspace-split.mod-root.ii-zen-slight .workspace-tabs.mod-top:nth-child(2) > .workspace-tab-header-container,
+.workspace-split.mod-root.ii-zen-slight .workspace-split.mod-horizontal:nth-child(2) .workspace-tabs.mod-top:nth-child(2) > .workspace-tab-header-container{
+	padding-left: 65px;
+}
 
-/* 编辑器样式 */
-/* .theme-light .workspace-leaf.mod-active.ii-zen .cm-sizer{
-	background-color: antiquewhite;
-	padding: 20px;
-	box-shadow: 0px 0px 100px 15px #000;
-	border-radius: 8px;
-}
-.theme-dark .workspace-leaf.mod-active.ii-zen .cm-sizer{
-	background-color: rgb(114, 99, 80);
-	padding: 20px;
-	box-shadow: 0px 0px 100px 15px #000;
-	border-radius: 8px;
-	color:  #ccc;
-} */

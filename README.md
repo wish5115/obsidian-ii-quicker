@@ -2,25 +2,42 @@
 
 [中文帮助](https://github.com/wish5115/obsidian-ii-plugin/blob/main/README-zh.md)
 
-# Plugin Introduction
+# Introduction
 
-This plugin has 3 functions: fast insertion of Markdown code, status bar shows the size of the document and Zen mode, these 3 modes can be switched on and off. Lightweight, all the code more than 800 lines, the core code more than 200 lines, mostly for ease of use and handling interface logic. You can quickly insert most of the Markdown code and some uncommon code, such as time, Audio, Video, Iframe, etc.
+The main features of this plugin are: quick insertion of Markdown code, Zen mode, browser search, status bar displaying current document size, user-defined commands, JavaScript and CSS code snippets, draggable status bar, minimize button added to the settings panel, and so on.
 
-# Why Develop
 
-Although Markdown input is already very convenient, there are times when fast input of certain code is needed. Although there are related plugins in the community, most of them require mouse clicking on the toolbar, and even if you use the slash command, you need to input many characters to call it out, and some other commands are mixed in, which is not convenient. This plugin, on the other hand, only needs to type `/ii` to call out all the commands, which is very convenient and quick to use. You can also quickly insert some time, Audio, Video, Iframe and other very useful code.
+# Features
 
-The main reason for adding the status bar to display the current document size is that I don't see any related plug-ins in the community, and it's also interesting to see the relationship between the word count and the occupied space so that you can predict the relationship between the two.
+- Quickly insert common Markdown generation and some HTML codes, including Sup, Sub, Audio, Video, Iframe, Left-Center-Right Alignment, Variables, Footnote, Callout, Anchor Points, HTML Comments and so on.
 
-Zen mode is added to focus on writing without distraction, but also because the community's two related plug-ins are a little problematic, so I did my own research.
+- 3 Zen modes, including Deep Zen mode, Light Zen mode, Micro Zen mode, and you can customize their styles.
+
+- You can search the selected text with the browser.
+
+- Status bar shows the current document size.
+
+- In addition to common Markdown code and common HTML code, you can also customize your own code by customizing the command input box to generate your code into commands.
+
+- If you want to make minor adjustments to a certain function of the note you can use CSS code snippets, and when CSS is not enough, you can make further adjustments through JavaScript code snippets.
+
+- The status bar can be dragged around, this is useful if your status bar sometimes obscures important content.
+
+- Minimize Settings Panel, this feature allows you to temporarily hide your settings panel, unlike closing it will keep the state of the information before you minimize it, such as the state of your input, the position of the scrollbar and so on.
+
+- The common color blocks in the Color panel of the Color command are selected from the 22 most recognizable human colors. See also the article [20种不同的颜色](https://zhuanlan.zhihu.com/p/508870810) or [A Colour Alphabet and the Limits of Colour Coding](https://www.researchgate.net/publication/237005166_A_Colour_Alphabet_and_the_Limits_of_Colour_Coding)
 
 # Use
 
-`/ii`, generally for inserting code, and `ctrl+p + ii`, generally for wrapping code around selected text. Other shortcuts, e.g., `/iib` if you want to select bold commands, etc.
+`/ii`, generally used for inserting code, and `ctrl+p + ii` or the right-click menu, generally used for wrapping code around selected text. Other shortcuts, such as `/iib` if you want to select a bold command, etc.
 
-`/iiz` or `ctrl+p iiz` show zen mode, you can also set your own shortcuts, zen mode can be customized style.
+`/iiz` or `ctrl+p iiz` displays the Zen mode, you can also set your own shortcuts.
 
-Status bar shows current file size will show `xx.xx KB` or `xx.xx MB` in status bar.
+Zen mode can be triggered via the command panel `ctrl+p + iiz` or you can set your own shortcuts.
+
+Browser search can be done via the command panel and the context menu, which is usually more convenient to use.
+
+Time and date formatting, use the same time formatting code as the official one, see for more formatting: [String + Format](https://momentjs.com/docs/#/parsing/string-format/)
 
 # Preview
 
@@ -43,40 +60,9 @@ Status bar shows current file size will show `xx.xx KB` or `xx.xx MB` in status 
 
 # Installation
 
-Download [Release obsidian-ii-plugin-1.0.1] (https://github.com/wish5115/obsidian-ii-plugin/releases/tag/1.0.1) here
+Download [Release obsidian-ii-plugin-1.1.1] (https://github.com/wish5115/obsidian-ii-plugin/releases/tag/1.1.1) here
 
 After downloading, unzip the obsidian-ii-plugin.zip, put it in the plugin directory, restart obsidian, and then don't forget to open the plugin in the settings.
-
-# Configuration
-
-![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/settings1.webp)
-![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/settings2.webp)
-
-**Quick insert Markdown code:** enable this function, it will add the commands of common Markdown code, you can input them quickly by `/ii`, or you can use the command panel to input them.
-
-**Show doc size in status:** enable this function, it will show the size of the current document in status bar.
-
-**Zen mode:** If this function is enabled, it will add the command of Zen mode, you can open Zen mode by `/iiz` or command panel, or customize the shortcut to open Zen mode.
-
-**Show Chinese tips:** if this feature is enabled, it will show Chinese translation in the right side of the command list, see the picture in the preview, by default it will be turned on and off automatically according to your language.
-
-**Show Color picker modal:** this function is to pop up a color picker dialog for you to choose when you set text color or background, here 20 common colors are chosen which are most recognizable to most human beings, see: [list of 20 different colors](https://zhuanlan.zhihu.com/p/508870810 )
-
-**Common color codes:** here you can customize your common colors, note that each color code is on a separate line, here you can choose 20 common colors that are most recognizable to most humans, see: [list of 20 different colors](https://zhuanlan.zhihu.com/p/508870810 )
-
-**Show image and link modal:** This function is to pop up a dialog box for you to fill in more information when you insert an image or link.
-
-**Show media modal:** this function is to pop up a dialog box for you to fill more contents when you insert audio/video or Iframe.
-
-**Show tips in images and link code:** this function, when you insert empty images or link code, will use text to suggest the meaning of each part in the code, which is more friendly to newbies.
-
-**Use only standard Markdown code:** this function, when you insert Markdown code, use standard Markdown format to insert.
-
-**Date format:** this is when you insert the date, use the format, and the official time formatting code, more formats see: [String + Format](https://momentjs.com/docs/#/parsing/string-format/)
-
-**Time format:** this is the format used when you insert the time, using the same time formatting code as the official one, see [String + Format](https://momentjs.com/docs/#/parsing/string-format/) for more formats.
-
-**Zen mode style:** here you can customize your zen mode style, including editor style and background style, in fact, you can input any style you want.
 
 
 # Issues and feedback

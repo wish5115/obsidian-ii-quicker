@@ -11,7 +11,7 @@ The main features of this plugin are quick insertion of Markdown code, Zen mode,
 
 - Quickly insert common Markdown generation and some HTML codes, including Sup, Sub, Audio, Video, Iframe, Left-Center-Right Alignment, Variables, Footnote, Callout, Anchor Points, HTML Comments and so on.
 
-- 3 Zen modes, including Deep Zen mode, Light Zen mode, Micro Zen mode, and you can customize their styles.
+- 3 Zen modes, including Deep Zen mode, Light Zen mode, Slight Zen mode, and you can customize their styles.
 
 - You can search the selected text with the browser.
 

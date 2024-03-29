@@ -157,7 +157,7 @@ export class QuickInsert{
 					return
 				}
 				menu.addItem((item) => {
-					item.setTitle("II-Plugin")
+					item.setTitle("II-Quicker")
 					    .setIcon("wand")
 					    .onClick(async () => {
 							new Notice("Please set up the submenu first");

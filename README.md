@@ -4,7 +4,7 @@
 
 # Introduction
 
-The main features of this plugin are: quick insertion of Markdown code, Zen mode, browser search, status bar displaying current document size, user-defined commands, JavaScript and CSS code snippets, draggable status bar, minimize button added to the settings panel, and so on.
+The main features of this plugin are quick insertion of Markdown code, Zen mode, browser search, status bar displaying current document size, user-defined commands, JavaScript and CSS code snippets, draggable status bar, minimize button added to the settings panel, and so on.
 
 
 # Features
@@ -27,7 +27,13 @@ The main features of this plugin are: quick insertion of Markdown code, Zen mode
 
 - The common color blocks in the Color panel of the Color command are selected from the 22 most recognizable human colors. See also the article [20种不同的颜色](https://zhuanlan.zhihu.com/p/508870810) or [A Colour Alphabet and the Limits of Colour Coding](https://www.researchgate.net/publication/237005166_A_Colour_Alphabet_and_the_Limits_of_Colour_Coding)
 
-# Use
+# Installation
+
+Download [Release obsidian-ii-plugin-1.1.1] (https://github.com/wish5115/obsidian-ii-plugin/releases/tag/1.1.1) here
+
+After downloading, unzip the obsidian-ii-plugin.zip, put it in the plugin directory, restart obsidian, and then don't forget to open the plugin in the settings.
+
+# Usage
 
 `/ii`, generally used for inserting code, and `ctrl+p + ii` or the right-click menu, generally used for wrapping code around selected text. Other shortcuts, such as `/iib` if you want to select a bold command, etc.
 
@@ -57,12 +63,6 @@ Time and date formatting, use the same time formatting code as the official one,
 #### Animation
 
 ![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-plugin@main/assets/screenshots/iiplugin.gif)
-
-# Installation
-
-Download [Release obsidian-ii-plugin-1.1.1] (https://github.com/wish5115/obsidian-ii-plugin/releases/tag/1.1.1) here
-
-After downloading, unzip the obsidian-ii-plugin.zip, put it in the plugin directory, restart obsidian, and then don't forget to open the plugin in the settings.
 
 
 # Issues and feedback

@@ -1,5 +1,5 @@
 {
-	"name": "obsidian-ii-plugin",
+	"name": "obsidian-ii-quicker",
 	"version": "1.1.1",
 	"description": "Quickly insert Markdown code, Zen mode, browser search, status bar shows current document size, user-defined commands, JavaScript and CSS code snippets, draggable status bar, minimize button added to settings panel, and more.",
 	"main": "src/main.js",

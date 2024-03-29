@@ -65,11 +65,11 @@ export class Zen {
                 document.querySelector(item)?.addClass("ii-zen-slight");
             });
 
-            document.addEventListener("keydown", (e) => {
-                if(e.key === "Escape" && this.plugin.zenSlighting){
-                    this.slightZen('exitFullscreen')
-                }
-            });
+            // document.addEventListener("keydown", (e) => {
+            //     if(e.key === "Escape" && this.plugin.zenSlighting){
+            //         this.slightZen('exitFullscreen')
+            //     }
+            // });
         } else {
             this.plugin.zenSlighting = false;
             body.removeClass("ii-zen-slight");
@@ -132,11 +132,11 @@ export class Zen {
                 document.querySelector(item)?.addClass("ii-zen-light");
             });
 
-            document.addEventListener("keydown", (e) => {
-                if(e.key === "Escape" && this.plugin.zenLighting){
-                    this.lightZen('exitFullscreen')
-                }
-            });
+            // document.addEventListener("keydown", (e) => {
+            //     if(e.key === "Escape" && this.plugin.zenLighting){
+            //         this.lightZen('exitFullscreen')
+            //     }
+            // });
 
         } else {
             this.plugin.zenLighting = false;

@@ -1,4 +1,4 @@
-# Obsidian II-Plugin
+# Obsidian-II-Quicker
 
 [中文帮助](https://github.com/wish5115/obsidian-ii-plugin/blob/main/README-zh.md)
 

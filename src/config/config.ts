@@ -184,13 +184,14 @@ const mousemoveEvent = function(event) {
 		statusBar.style.bottom='auto';
 	}
 }
-document.addEventListener('mousemove', mousemoveEvent);
+statusBar.addEventListener('mousemove', mousemoveEvent);
 
 // 监听鼠标释放事件
 const mouseupEvent = function(event) {
 	isDragging = false;
+	storeStatusPosition();
 }
-document.addEventListener('mouseup', mouseupEvent);
+statusBar.addEventListener('mouseup', mouseupEvent);
 // 监听双击复原
 const recoveryStatusBar = () => {
 	statusBar.style.left = 'auto';
@@ -198,6 +199,8 @@ const recoveryStatusBar = () => {
 	statusBar.style.right='0px';
 	statusBar.style.bottom='0px';
 	statusBar.style.position = statusPosition || 'fixed';
+	localStorage.removeItem("ii-status-bar-left");
+	localStorage.removeItem("ii-status-bar-top");
 }
 global.iiRecoveryStatusBar = recoveryStatusBar;
 const dblclickEvent = (event) => {
@@ -209,9 +212,48 @@ statusBar.addEventListener('dblclick', dblclickEvent);
 global.iiRemoveStatusDragEvents = () => {
 	//console.log('removeStatusDragEvents');
 	statusBar.removeEventListener('mousedown', mousedownEvent);
-	document.removeEventListener('mousemove', mousemoveEvent);
-	document.removeEventListener('mouseup', mouseupEvent);
+	statusBar.removeEventListener('mousemove', mousemoveEvent);
+	statusBar.removeEventListener('mouseup', mouseupEvent);
 	this.removeEventListener('resize', resizeEvent);
 	statusBar.removeEventListener('dblclick', dblclickEvent);
 }
+function restoreLastPosition() {
+	if(!localStorage.getItem("ii-status-bar-remember")) return;
+	const left = localStorage.getItem("ii-status-bar-left");
+	const top = localStorage.getItem("ii-status-bar-top");
+	if(left !== null && top !== null){
+		if(statusPosition !== 'fixed' || statusPosition !== 'absolute') {
+			statusBar.style.position = 'absolute';
+		}
+		statusBar.style.left = left;
+		statusBar.style.top = top;
+		statusBar.style.right='auto';
+		statusBar.style.bottom='auto';
+	}
+}
+function storeStatusPosition() {
+	if(!localStorage.getItem("ii-status-bar-remember")) return;
+	if(!statusBar.style.left || statusBar.style.left === 'auto') {
+		localStorage.removeItem("ii-status-bar-left");
+	} else {
+		localStorage.setItem("ii-status-bar-left", statusBar.style.left);
+	}
+	if(!statusBar.style.top || statusBar.style.top === 'auto') {
+		localStorage.removeItem("ii-status-bar-top");
+	} else {
+		localStorage.setItem("ii-status-bar-top", statusBar.style.top);
+	}
+}
+global.iiStatusBarStorePosition = storeStatusPosition;
+function ready(fn) {
+	if (document.readyState !== 'loading') {
+		fn();
+	} else {
+		document.addEventListener('DOMContentLoaded', fn);
+	}
+}
+ready(()=>{
+	//还原上次的位置
+	restoreLastPosition();
+});
 `;

@@ -35,6 +35,7 @@ export interface IIPluginSettings {
 	searchUrl: string;
 	statusCanDragged: boolean;
 	showMinButton: boolean;
+	storeStatusDraggedPos: boolean;
 }
 
 export const DEFAULT_SETTINGS: IIPluginSettings = {
@@ -61,6 +62,7 @@ export const DEFAULT_SETTINGS: IIPluginSettings = {
 	searchUrl: "https://bing.com/search?q={selection}",
 	statusCanDragged: false,
 	showMinButton: false,
+	storeStatusDraggedPos: true,
 };
 
 /**
@@ -252,8 +254,10 @@ export class IISettingTab extends PluginSettingTab {
 			});
 
 		// 状态栏是否可以拖动
-		new Setting(containerEl).setName(t("Status bar can drag"))
+		const statusDragSetting = new Setting(containerEl)
+			.setName(t("Status bar can drag"))
 			.setDesc(t("If enabled, the status bar can be dragged."))
+			.setClass("settings-status-drag")
 			.addToggle((toggle) => {
 				toggle
 					.setValue(this.plugin.settings.statusCanDragged)
@@ -267,6 +271,25 @@ export class IISettingTab extends PluginSettingTab {
 						}
 					});
 			});
+			const statusDragCheckbox = statusDragSetting.controlEl
+				.createEl("label", { text: t("Remember dragged position")})
+				.createEl("input", { type: "checkbox" })
+			statusDragCheckbox.checked = this.plugin.settings.storeStatusDraggedPos;
+			if (statusDragCheckbox.checked) {
+				localStorage.setItem("ii-status-bar-remember", "1");
+			}
+			statusDragCheckbox.onchange = async (e) => {
+				if (statusDragCheckbox.checked) {
+					this.plugin.settings.storeStatusDraggedPos = true;
+					localStorage.setItem("ii-status-bar-remember", "1");
+					//@ts-ignore
+					global.iiStatusBarStorePosition();
+				} else {
+					this.plugin.settings.storeStatusDraggedPos = false;
+					localStorage.setItem("ii-status-bar-remember", "");
+				}
+				await this.plugin.saveSettings();
+			}
 
 		// ob设置面板添加最小化按钮
 		new Setting(containerEl).setName(t("Add minimize button to settings panel"))

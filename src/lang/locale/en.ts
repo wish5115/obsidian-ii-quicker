@@ -79,4 +79,5 @@ export default {
     "The javascript code snippets will be executed when the plugin is loaded.":"The javascript code snippets will be executed when the plugin is loaded.",
     "You can open the devtools console to debug as you write.\nExample:\nconsole.log('Nice day!')":"You can open the devtools console to debug as you write.\nExample:\nconsole.log('What a nice day!')",
     "settings.customCodeDesc" : "1. each command occupies one line.<br />2. Format: Name::Code::menu. <br />3. ::menu means add to context menu at the same time.<br />4. Variables: {selection} means selected text, {cursor} means cursor position, default is after inserted code. <br />5. Lines starting with :: are comments will be ignored. <br />6. Line breaks are replaced by \\n.",
+    "Remember dragged position": "Remember dragged position",
 };

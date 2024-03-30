@@ -79,6 +79,6 @@ export default {
   "Javascript code snippets":"JavaScript代码片段",
   "The javascript code snippets will be executed when the plugin is loaded.":"这里的JavaScript代码片段将会在插件加载时执行。",
   "You can open the devtools console to debug as you write.\nExample:\nconsole.log('Nice day!')":"你可以打开devtools控制台边写边调试。\n示例：\nconsole.log('What a nice day!')",
-  "settings.customCodeDesc": "1. 每个命令单独占一行<br />2. 格式：Name::Code::menu<br />3. ::menu代表同时添加到右键菜单<br />4. 变量：{selection}代表选中的文字，{cursor}代表光标位置，默认在插入代码的最后<br />5. ::开头的行是注释将会忽略<br />6. 换行用\\n代替",
+  "settings.customCodeDesc": "1. 每个命令单独占一行\n2. 格式：Name::Code::menu\n3. ::menu代表同时添加到右键菜单\n4. 变量：{selection}代表选中的文字，{cursor}代表光标位置，默认在插入代码的最后\n5. ::开头的行是注释将会忽略\n6. 换行用\\n代替",
   "Remember dragged position": "记住拖动位置",
 };

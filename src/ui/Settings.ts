@@ -368,11 +368,12 @@ export class IISettingTab extends PluginSettingTab {
 
 
 		//添加自定义格式
-		const descNode = document.createElement('div')
-		descNode.className = 'settings-custom-code-desc';
-		descNode.innerHTML = t("settings.customCodeDesc")
+		const customDescNode = document.createElement('div')
+		customDescNode.addClass('settings-custom-code-desc');
+		const customDescT = t("settings.customCodeDesc");
+		customDescT.split('\n').forEach(item => customDescNode.createEl('div', {text: item}))
 		const customDescFragment = document.createDocumentFragment()
-		customDescFragment.append(descNode)
+		customDescFragment.append(customDescNode)
 		let customCodeTimer: NodeJS.Timeout | null = null;
 		new Setting(containerEl).setName(t("Custom codes"))
 			.setDesc(customDescFragment)

@@ -29,7 +29,7 @@ The main features of this plugin are quick insertion of Markdown code, Zen mode,
 
 # Installation
 
-Download [Release obsidian-ii-quicker-1.1.6] (https://github.com/wish5115/obsidian-ii-quicker/releases/tag/1.1.6) here
+Download [Release obsidian-ii-quicker-1.1.8] (https://github.com/wish5115/obsidian-ii-quicker/releases/tag/1.1.8) here
 
 After downloading, unzip the obsidian-ii-quicker.zip, put it in the plugin directory, restart obsidian, and then don't forget to open the plugin in the settings.
 

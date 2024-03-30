@@ -156,18 +156,21 @@ export class Zen {
     //深度禅模式
     deepZen() {
 
-        let containerEl: HTMLElement;
-        if(this.zenMode === ZenMode.Deep) {
-            //深度禅模式
-            const leaf = this.plugin.app.workspace.getActiveViewOfType(ItemView)?.leaf;
-            //@ts-ignore
-            containerEl = leaf?.containerEl;
-        } else {
-            //轻度禅模式
-            //@ts-ignore
-            containerEl = this.plugin.app.workspace.rootSplit?.containerEl
-        }
+        // let containerEl: HTMLElement;
+        // if(this.zenMode === ZenMode.Deep) {
+        //     //深度禅模式
+        //     const leaf = this.plugin.app.workspace.getActiveViewOfType(ItemView)?.leaf;
+        //     //@ts-ignore
+        //     containerEl = leaf?.containerEl;
+        // }else {
+        //     //轻度禅模式
+        //     //@ts-ignore
+        //     containerEl = this.plugin.app.workspace.rootSplit?.containerEl
+        // }
 
+        const leaf = this.plugin.app.workspace.getActiveViewOfType(ItemView)?.leaf;
+        //@ts-ignore
+        const containerEl = leaf?.containerEl;
         containerEl.requestFullscreen();
 
         // 监控全屏事件

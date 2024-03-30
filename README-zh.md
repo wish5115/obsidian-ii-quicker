@@ -53,6 +53,8 @@
 
 ![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-quicker@main/assets/screenshots/image-modal.webp)
 
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-quicker@main/assets/screenshots/context-menu.png)
+
 #### 禅模式截图
 
 ![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-quicker@main/assets/screenshots/zen-light.png)

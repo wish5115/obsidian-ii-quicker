@@ -55,6 +55,8 @@ Time and date formatting, use the same time formatting code as the official one,
 
 ![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-quicker@main/assets/screenshots/image-modal.webp)
 
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-quicker@main/assets/screenshots/context-menu.png)
+
 #### Zen Mode Screenshots
 
 ![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-quicker@main/assets/screenshots/zen-light.png)

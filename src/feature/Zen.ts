@@ -1,6 +1,7 @@
-import { ItemView } from "obsidian";
+import { ItemView, Notice } from "obsidian";
 import IIPlugin from "src/main";
 import { zenSplits, zenLightSplits, zenSlightSplits } from "src/config/config";
+import { t } from "src/lang/helpers";
 
 export enum ZenMode {
     Deep = 'deep',
@@ -19,6 +20,12 @@ export class Zen {
 
 
     fullscreen(zenMode = ZenMode.Deep) {
+        //如果子窗口则退出
+        const leaf = this.plugin.app.workspace.getActiveViewOfType(ItemView)?.leaf;
+        if(leaf?.getContainer().doc.location.href === 'about:blank') {
+            new Notice(t("Zen mode is not supported in sub-windows"));
+            return
+        }
         this.zenMode = zenMode;
         if(this.zenMode === ZenMode.Deep) {
             this.deepZen()

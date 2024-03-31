@@ -30,6 +30,9 @@ export default {
   //QuickInsert.ts
   "Search in browser":"浏览器搜索",
 
+  //Zen.ts
+  "Zen mode is not supported in sub-windows":"子窗口暂不支持禅模式",
+
   // setting.ts
   "Quick insert markdown code":"快速插入Markdown代码",
   "If enabled, you can use /ii to quickly insert Markdown code.":"开启后你可以使用 /ii 快速插入Markdown代码。",

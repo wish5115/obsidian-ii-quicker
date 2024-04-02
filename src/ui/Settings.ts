@@ -36,6 +36,7 @@ export interface IIPluginSettings {
 	statusCanDragged: boolean;
 	showMinButton: boolean;
 	storeStatusDraggedPos: boolean;
+	showFileCopyPathContextMenu: boolean;
 }
 
 export const DEFAULT_SETTINGS: IIPluginSettings = {
@@ -63,6 +64,7 @@ export const DEFAULT_SETTINGS: IIPluginSettings = {
 	statusCanDragged: false,
 	showMinButton: false,
 	storeStatusDraggedPos: true,
+	showFileCopyPathContextMenu: true,
 };
 
 /**
@@ -180,6 +182,18 @@ export class IISettingTab extends PluginSettingTab {
 						await this.plugin.saveSettings();
 					});
 			})
+
+		// 文件菜单右键复制文件路径
+        new Setting(containerEl).setName(t("Copy file path right-click menu"))
+			.setDesc(t("When enabled, the \"Copy File Path\" function will be displayed in the right-click menu of the file."))
+			.addToggle((toggle) => {
+				toggle
+					.setValue(this.plugin.settings.showFileCopyPathContextMenu)
+					.onChange(async (value) => {
+						this.plugin.settings.showFileCopyPathContextMenu = value;
+						await this.plugin.saveSettings();
+					});
+			});
 
 		//添加是否弹出颜色选择面板
 		new Setting(containerEl).setName(t("Show color picker modal"))

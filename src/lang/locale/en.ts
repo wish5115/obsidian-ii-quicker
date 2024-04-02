@@ -4,6 +4,10 @@ export default {
     //main.ts
     "Mobile devices are not supported at this time": "Mobile devices are not supported at this time",
     "Note: During minimization, can't open modal windows, such as control panels.": "Note: During minimization, can't open modal windows, such as control panels.",
+    "Copied!":"Copied!",
+    "Copy file path":"Copy file path",
+    "Copy file path right-click menu":"Copy file path right-click menu",
+    "When enabled, the \"Copy File Path\" function will be displayed in the right-click menu of the file.":"When enabled, the \"Copy File Path\" function will be displayed in the right-click menu of the file.",
 
     //dialog.ts
     "Please input the image address":"Please input the image address",

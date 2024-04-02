@@ -4,6 +4,10 @@ export default {
   //main.ts
   "Mobile devices are not supported at this time": "移动设备暂不支持",
   "Note: During minimization, can't open modal windows, such as control panels.": "注意：最小化期间，无法打开模态窗，比如控制面板。",
+  "Copied!":"已复制！",
+  "Copy file path":"复制文件路径",
+  "Copy file path right-click menu":"右键复制文件路径",
+  "When enabled, the \"Copy File Path\" function will be displayed in the right-click menu of the file.":"开启后，会在文件右键菜单中显示“复制文件路径”功能。",
 
   //dialog.ts
   "Please input the image address":"请输入图片地址",

@@ -121,36 +121,11 @@ export class QuickInsert{
 		this.registerCustomCodesCommand();
 	}
 
-	// 注册在浏览器搜索命令
-	registerSearchInBrowserCommand() {
-		this.plugin.addCommand({
-			id: "own:search-in-browser",
-			name: "Search in browser" + (this.plugin.isCN?`（浏览器搜索）`:''),
-			editorCheckCallback: (checking: boolean, editor: Editor, view: MarkdownView) => {
-				if(checking) return this.plugin.settings.showSearchInBrowser;
-				const selection = editor.getSelection();
-				global.open(this.plugin.settings.searchUrl.replace('{selection}', selection), "_blank");
-			},
-		});
-		return this;
-	}
-
 	// 注册右键菜单命令
 	registerContextMenu() {
 		// 添加右键菜单
 		this.plugin.registerEvent(
 			this.plugin.app.workspace.on("editor-menu", (menu: Menu, editor: Editor, view: MarkdownView) => {
-				// 浏览器搜索
-				if(this.plugin.settings.showSearchInBrowser) {
-					menu.addItem((item) => {
-						item.setTitle(t("Search in browser"))
-						    .setIcon("search")
-						    .onClick(async () => {
-								const selection = editor.getSelection();
-								global.open(this.plugin.settings.searchUrl.replace('{selection}', selection), "_blank");
-						    });
-					});
-				}
 
 				// 快速插入命令
 				if(!this.plugin.settings.showCommandMenu){
@@ -265,7 +240,7 @@ export class QuickInsert{
 		};
 
 		//处理H1,H2,H3,H4,H5,H6,Tag,Hr,Indent,List,OrderList,Task,Quote,Table
-		const aloneCodes = ["H1", "H2", "H3", "H4", "H5", "H6", "Tag", "Horizontal rule", "Indent", "Bullet list", "Numbered list", "Task list", "Quote", "Table", "Anchor", "Variables", "Footnotes", "Callout"];
+		const aloneCodes = ["H1", "H2", "H3", "H4", "H5", "H6", "Tag", "Horizontal rule", "Indent", "Bullet list", "Numbered list", "Task list", "Quote", "Table", "Anchor", "Variables", "Footnotes", "Callout", "Image link", "Email", "PDF"];
 		if(aloneCodes.includes(item.key)){
 			if (isMultiLine) return replaceMultiLine((line: string) => item.code + line, item.cursor);
 			editor.replaceSelection(item.code + selectVal);
@@ -422,6 +397,12 @@ export class QuickInsert{
 		line = line.replace(/\[\[(.*?#\^\^?([^\]]*?))\]\]/g, "$1");
 		//清除wiki链接和wiki图片
 		line = line.replace(/!?\[\[([^\]]*?)\]\]/g, "$1");
+		//清除email
+		line = line.replace(/<([^>]*?@[^>]*?\.[^>]*?)>/g, "$1");
+		//清除图片链接
+		line = line.replace(/<a[^>]*?href="([^"]*?)"[^>]*?><img[^>]*?src="([^"]*?)"[^>]*?\/><\/a>/g, "$2-->$1");
+		//清除链接
+		line = line.replace(/<(https?:\/\/[^>]*?)>/g, "$1");
 		//清除html链接标签
 		line = line.replace(/<a[^>]*?href="([^"]*?)"[^>]*?>([^<]*?)<\/a>/g, "$2 $1");
 		//清除html图片标签

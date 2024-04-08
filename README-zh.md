@@ -44,7 +44,7 @@
 ![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-quicker@main/assets/screenshots/context-menu.png)
 
 
-# 问题
+# 反馈
 
 您有任何问题都可以到 [obsidian-ii-quicker/issues](https://github.com/wish5115/obsidian-ii-quicker/issues) 去反馈。
 

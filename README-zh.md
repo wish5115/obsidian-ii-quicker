@@ -11,11 +11,11 @@
 
 - 支持图片，链接，多媒体等对话框，方便快速输入更多信息。
 
-- 可随意开关命令及可选择哪些命令在右键菜单中显示。
+- 可随意开关上述命令及可选择哪些命令在右键菜单中显示。
 
-- 除了常见和的Markdown代码和HTML代码外，你还可以自定义你自己的代码，通过自定义命令输入框，可以把你的代码生成命令。
+- 除了常见的Markdown代码和HTML代码外，你还可以自定义代码，通过自定义命令配置，可以把你的代码生成输入命令。
 
-- 颜色命令的颜色面板中常见的色块选自22种人类最易分辨的颜色。可参见文章[20种不同的颜色](https://zhuanlan.zhihu.com/p/508870810)或[A Colour Alphabet and the Limits of Colour Coding](https://www.researchgate.net/publication/237005166_A_Colour_Alphabet_and_the_Limits_of_Colour_Coding)
+- 颜色选择面板中常见的色块，选自22种人类最易分辨的颜色。可参见文章[20种不同的颜色](https://zhuanlan.zhihu.com/p/508870810)或[A Colour Alphabet and the Limits of Colour Coding](https://www.researchgate.net/publication/237005166_A_Colour_Alphabet_and_the_Limits_of_Colour_Coding)
 
 
 # 安装
@@ -29,9 +29,11 @@
 
 # 使用
 
-`/ii`，一般用于插入代码，`ctrl+p + ii`或右键菜单，一般用于对选择文字包裹代码。其他快捷方式，比如：如果想选择加粗命令也可以 `/iib` 等。
+首先确保您已开启斜杠命令。
 
-时间和日期格式化，采用和官方一致的时间格式化代码，更多格式参见：[String + Format](https://momentjs.com/docs/#/parsing/string-format/)
+然后，`/ii`，一般用于插入代码；`ctrl+p + ii`或右键菜单，一般用于对选择文字的格式化，比如：`/iib`对选择文字加粗等。
+
+时间和日期格式化，采用和官方一致的时间格式化方式，更多格式参见：[String + Format](https://momentjs.com/docs/#/parsing/string-format/)
 
 # 截图
 
@@ -44,7 +46,7 @@
 ![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-ii-quicker@main/assets/screenshots/context-menu.png)
 
 
-# 问题
+# 反馈
 
 您有任何问题都可以到 [obsidian-ii-quicker/issues](https://github.com/wish5115/obsidian-ii-quicker/issues) 去反馈。
 

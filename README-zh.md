@@ -20,7 +20,7 @@
 
 # 安装
 
-到这里下载 [Release obsidian-ii-quicker-1.1.6](https://github.com/wish5115/obsidian-ii-quicker/releases/)
+到这里下载 [obsidian-ii-quicker](https://github.com/wish5115/obsidian-ii-quicker/releases/)
 
 下载后把 obsidian-ii-quicker.zip 解压后，放到插件目录，重启 obsidian，然后别忘了到设置里开启插件即可。
 
@@ -48,7 +48,7 @@
 
 # 反馈
 
-您有任何问题都可以到 [obsidian-ii-quicker/issues](https://github.com/wish5115/obsidian-ii-quicker/issues) 去反馈。
+您有任何问题都可以到 [issues](https://github.com/wish5115/obsidian-ii-quicker/issues) 去反馈。
 
 # 开发
 

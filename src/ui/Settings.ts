@@ -58,19 +58,6 @@ export class IISettingTab extends PluginSettingTab {
 
 		containerEl.empty();
 
-		//是否开启快速插入Markdown代码
-		// new Setting(containerEl).setName(t("Quick insert markdown code"))
-		// 	.setDesc(
-		// 		t("If enabled, you can use /ii to quickly insert Markdown code.")
-		// 	).addToggle((toggle) => {
-		// 		toggle
-		// 			.setValue(this.plugin.settings.quickInsert)
-		// 			.onChange(async (value) => {
-		// 				this.plugin.settings.quickInsert = value;
-		// 				await this.plugin.saveSettings();
-		// 			});
-		// 	});
-
 		// 是否开启菜单
 		new Setting(containerEl).setName(t("Show command in context menu"))
 			.setDesc(t("If enabled, the command context menu will be displayed when you right-click."))

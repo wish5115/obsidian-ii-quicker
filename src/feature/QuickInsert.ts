@@ -76,8 +76,10 @@ export class QuickInsert{
 		const customCodesArr = customCodes.split("\n").filter((item) => item !== "").map((item) => typeof item === 'string' ? item.trim() : item);
 		customCodesArr.forEach((line) => {
 			if(line.startsWith("::")) return
-			const [name, code] = line.split("::");
+			let [name, code] = line.split("::");
 			if(!name || !`${name}`.trim() || !code || !`${code}`.trim()) return
+			name = name.replace(/\\:/g, ':');
+			code = code.replace(/\\:/g, ':');
 			this.plugin.addCommand({
 				id: "custom:" + name.trim().replace(/\s+/g, "-").toLowerCase(),
 				name: "custom: " + name.trim(),
@@ -185,8 +187,11 @@ export class QuickInsert{
 					let count = 0;
 					customCodesArr.forEach((line, index) => {
 						if(line.startsWith("::")) return
-						const [name, code, showMenu] = line.split("::");
+						// eslint-disable-next-line prefer-const
+						let [name, code, showMenu] = line.split("::");
 						if(!name || !`${name}`.trim() || !code || !`${code}`.trim() || !showMenu || !`${showMenu}`.trim()) return
+						name = name.replace(/\\:/g, ':');
+						code = code.replace(/\\:/g, ':');
 						//添加分割线
 						if (count++ === 0) subMenu.addSeparator();
 						//添加子菜单
